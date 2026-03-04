@@ -1,0 +1,32 @@
+Jan 15 08:01:12 webserver sshd[1234]: Accepted password for admin from 192.168.1.10 port 22
+Jan 15 08:02:45 webserver sshd[1235]: Failed password for root from 203.0.113.45 port 22
+Jan 15 08:02:47 webserver sshd[1235]: Failed password for root from 203.0.113.45 port 22
+Jan 15 08:02:49 webserver sshd[1235]: Failed password for root from 203.0.113.45 port 22
+Jan 15 08:02:51 webserver sshd[1235]: Failed password for root from 203.0.113.45 port 22
+Jan 15 08:02:53 webserver sshd[1235]: Failed password for root from 203.0.113.45 port 22
+Jan 15 08:02:55 webserver sshd[1235]: Failed password for root from 203.0.113.45 port 22
+Jan 15 08:03:01 webserver sshd[1235]: Failed password for admin from 203.0.113.45 port 22
+Jan 15 08:03:03 webserver sshd[1235]: Failed password for admin from 203.0.113.45 port 22
+Jan 15 08:05:00 webserver sshd[1240]: Accepted password for deploy from 192.168.1.20 port 22
+Jan 15 08:10:00 webserver apache2[500]: 192.168.1.1 - - [15/Jan/2024:08:10:00 +0000] "GET /index.html HTTP/1.1" 200 1024
+Jan 15 08:10:05 webserver apache2[500]: 192.168.1.1 - - [15/Jan/2024:08:10:05 +0000] "GET /about.html HTTP/1.1" 200 512
+Jan 15 08:11:00 webserver apache2[500]: 45.33.32.156 - - [15/Jan/2024:08:11:00 +0000] "GET /admin HTTP/1.1" 403 256
+Jan 15 08:11:02 webserver apache2[500]: 45.33.32.156 - - [15/Jan/2024:08:11:02 +0000] "GET /wp-login.php HTTP/1.1" 404 128
+Jan 15 08:11:05 webserver apache2[500]: 45.33.32.156 - - [15/Jan/2024:08:11:05 +0000] "GET /.env HTTP/1.1" 403 64
+Jan 15 08:11:08 webserver apache2[500]: 45.33.32.156 - - [15/Jan/2024:08:11:08 +0000] "GET /../../../etc/passwd HTTP/1.1" 400 32
+Jan 15 08:12:00 webserver kernel: [UFW BLOCK] IN=eth0 OUT= SRC=198.51.100.22 DST=10.0.0.1 PROTO=TCP DPT=3306
+Jan 15 08:12:01 webserver kernel: [UFW BLOCK] IN=eth0 OUT= SRC=198.51.100.22 DST=10.0.0.1 PROTO=TCP DPT=5432
+Jan 15 08:15:00 webserver cron[999]: pam_unix(cron:session): session opened for user root
+Jan 15 08:20:00 webserver sshd[1300]: Invalid user guest from 172.16.0.55 port 22
+Jan 15 08:20:02 webserver sshd[1300]: Failed password for invalid user guest from 172.16.0.55 port 22
+Jan 15 08:20:04 webserver sshd[1300]: Failed password for invalid user guest from 172.16.0.55 port 22
+Jan 15 08:20:06 webserver sshd[1300]: Failed password for invalid user guest from 172.16.0.55 port 22
+Jan 15 08:25:00 webserver sudo[1400]: admin : TTY=pts/0 ; PWD=/home/admin ; USER=root ; COMMAND=/bin/bash
+Jan 15 08:30:00 webserver apache2[500]: 10.0.0.5 - - [15/Jan/2024:08:30:00 +0000] "GET /search?q=<script>alert(1)</script> HTTP/1.1" 400 64
+Jan 15 08:31:00 webserver apache2[500]: 10.0.0.5 - - [15/Jan/2024:08:31:00 +0000] "GET /products?id=1 UNION SELECT username,password FROM users HTTP/1.1" 400 64
+Jan 15 08:35:00 webserver sshd[1500]: Accepted publickey for deploy from 192.168.1.20 port 22
+Jan 15 08:40:00 webserver apache2[500]: 192.168.1.1 - - [15/Jan/2024:08:40:00 +0000] "POST /api/login HTTP/1.1" 401 32
+Jan 15 08:40:01 webserver apache2[500]: 192.168.1.1 - - [15/Jan/2024:08:40:01 +0000] "POST /api/login HTTP/1.1" 401 32
+Jan 15 08:45:00 webserver systemd[1]: Started Daily apt upgrade and clean activities.
+Jan 15 09:00:00 webserver sshd[1600]: Failed password for root from 203.0.113.45 port 22
+Jan 15 09:00:02 webserver sshd[1600]: Failed password for root from 203.0.113.45 port 22
